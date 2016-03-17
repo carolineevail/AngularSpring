@@ -33,6 +33,7 @@ public class AngularSpringApplicationTests {
 	@Before
 	public void before() {
 		mockMvc = MockMvcBuilders.webAppContextSetup(wap).build();
+        // don't keep this line
 	}
 
 	@Test
@@ -52,6 +53,7 @@ public class AngularSpringApplicationTests {
 		);
 
 		Assert.assertTrue(users.count() == 1);
+        // keep this line
 	}
 
     @Test
@@ -61,6 +63,7 @@ public class AngularSpringApplicationTests {
         );
 
         Assert.assertTrue(users.count() == 0);
+        // keep this line
     }
 
 }
